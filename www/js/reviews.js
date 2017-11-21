@@ -52,3 +52,7 @@ var app = {
 $("#deviceready a").click(function() {
     window.location.href = $(this)[0].id + "review.html";
 });
+
+$("#home").click(function() {
+    window.location.href = "index.html";
+});

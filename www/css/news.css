@@ -65,6 +65,13 @@ body {
     margin-right:2%;
 }
 
+#home {
+    float:left;
+    margin-left:2%;
+    margin-top:5px;
+    height:24px;
+}
+
 .wrapper {
     height:40%;
     background-color:#D9D9D9;
