@@ -17,9 +17,9 @@
     * Create your own at http://cspisawesome.com
     -->
     <!-- <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: 'unsafe-inline' https://ssl.gstatic.com; style-src 'self' 'unsafe-inline'; media-src *" /> -->
-    <link rel="stylesheet" type="text/css" href="css/index.css" />
 
-    <title>Home</title>
+    <link rel="stylesheet" type="text/css" href="css/reviewtemplate.css" />
+    <title>Tutorial</title>
 </head>
 
 <body>
@@ -27,48 +27,31 @@
         <div id="deviceready">
             <p class="event listening">Connecting to Device</p>
             <div class="event received">
-            	<div id="headbar">
+                <div id="headbar">
                     <div class="spacer"></div>
-                    Blind Assistant
+                    <img src="img/home.png" id="home"/>Reviews
                 </div>
-                <div id="buttons">
-                    <a id="news">
-                        <div class="wrapper">
-                            <img class="icon" src="img/news.png">
-                            </img>
-                            <div class="label">
-                                <div class="spacer"></div>
-                                News
-                            </div>
-                        </div>
-                    </a>
-                    <a id="reviews">
-                        <div class="wrapper">
-                            <img class="icon" src="img/reviews.png">
-                            </img>
-                            <div class="label">
-                                <div class="spacer"></div>
-                                Reviews
-                            </div>
-                        </div>
-                    </a>
-                    <a id="tutorial">
-                        <div class="wrapper">
-                            <img class="icon" src="img/tutorial.png">
-                            </img>
-                            <div class="label">
-                                <div class="spacer"></div>
-                                Tutorial
-                            </div>
-                        </div>
-                    </a>
+                <div id="main">
+                	<div id="titlebar">
+                    	<img id="logo" src="img/magic.png"></img>
+                    	<div class="spacer2"></div>
+                    	<h1>MAGic Screen Magnifier</h1>
+                  		<br/>
+                  		<h3>Windows Screen Magnifier - 11 Nov 2017</h3>
+                    </div>
+                    <div id="content">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In rutrum, lacus ac condimentum maximus, dolor ligula dignissim nulla, non fermentum erat urna at tellus. Sed ac arcu vitae ex aliquam imperdiet ut nec est. Nulla facilisi. Phasellus hendrerit tortor nec eros elementum interdum. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam tincidunt nisl at eros tincidunt lobortis. Curabitur vel pharetra massa, ac luctus est. Mauris at dictum tortor. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Donec tincidunt vestibulum metus, non finibus tellus posuere non. Vivamus a velit viverra, eleifend mi in, porta tellus. Morbi accumsan, orci non placerat hendrerit, ligula arcu convallis elit, vel bibendum tellus urna ut arcu. Suspendisse in tellus enim. Nunc in ex id quam fringilla mattis nec posuere nisi. Donec aliquet aliquet porta. Pellentesque suscipit elementum venenatis.
+                    <br/>
+                    <br/>
+					Cras at nibh pretium, iaculis dolor consectetur, iaculis elit. Sed ultrices nibh eros, sit amet semper tortor euismod in. Proin iaculis ornare erat, ac elementum eros egestas eu. Sed at neque ante. Vivamus vitae velit finibus, lacinia lorem ac, gravida ligula. Etiam euismod aliquam iaculis. 
+
+					</div>
                 </div>
             </div>
         </div>
     </div>
     <script type="text/javascript" src="jquery-3.2.1.min.js"></script>
     <script type="text/javascript" src="cordova.js"></script>
-    <script type="text/javascript" src="js/index.js"></script>
+    <script type="text/javascript" src="js/reviewtemplate.js"></script>
     <script type="text/javascript">
         app.initialize();
     </script>

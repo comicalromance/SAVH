@@ -52,3 +52,8 @@ var app = {
 $("#deviceready a").click(function() {
     window.location.href = "navigation" + $(this)[0].id + ".html";
 });
+
+$("#home").click(function() {
+    window.location.href = "tutorial.html";
+});
+

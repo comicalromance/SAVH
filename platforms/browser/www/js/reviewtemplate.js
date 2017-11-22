@@ -49,10 +49,6 @@ var app = {
     }
 };
 
-$("#deviceready a").click(function() {
-    window.location.href = $(this)[0].id + "menu.html";
-});
-
 $("#home").click(function() {
-    window.location.href = "index.html";
+    window.location.href = "reviews.html";
 });

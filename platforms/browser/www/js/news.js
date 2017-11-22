@@ -50,9 +50,10 @@ var app = {
 };
 
 $("#deviceready a").click(function() {
-    window.location.href = $(this)[0].id + "menu.html";
+    window.location.href = $(this)[0].id + "article.html";
 });
 
 $("#home").click(function() {
     window.location.href = "index.html";
 });
+

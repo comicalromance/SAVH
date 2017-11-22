@@ -23,21 +23,47 @@
 
 <body>
     <div class="app">
-        <h1>Navigation</h1>
         <div id="deviceready">
             <p class="event listening">Connecting to Device</p>
             <div class="event received">
-                <ul>
-                    <li><a id="1">Item 1</a></li>
-                    <li><a href="#">Item 2</a></li>
-                    <li><a href="#">Item 3</a></li>
-                    <li><a href="#">Item 4</a></li>
-                    <li><a href="#">Item 5</a></li>
-                    <li><a href="#">Item 6</a></li>
-                    <li><a href="#">Item 7</a></li>
-                    <li><a href="#">Item 8</a></li>
-                </ul>
+                <div id="headbar">
+                    <div class="spacer"></div>
+                    <img src="img/home.png" id="home"/>Navigation
+                </div>
+                <div id="items">
+                    <a id="1">
+                        <div class="wrapper">
+                            <h4>Task 1: Basic Navigation</h4>
+                            <h5>Swiping, Exploring, Activating</h5>
+                        </div>
+                    </a>
+                    <a id="2">
+                        <div class="wrapper">
+                            <h4>Task 2: Scrolling</h4>
+                            <h5>Two-finger scrolling, jumping forward and backward</h5>
+                        </div>
+                    </a>
+                    <a id="3">
+                        <div class="wrapper">
+                            <h4>Task 3: TalkBack menus</h4>
+                            <h5>Global Talkback menu, local Talkback menu</h5>
+                        </div>
+                    </a>
+                    <a id="4">
+                        <div class="wrapper">
+                            <h4>Task 4: Text Navigation</h4>
+                            <h5>Choosing Text Navigation settings</h5>
+                        </div>
+                    </a>
+                    <a id="5">
+                        <div class="wrapper">
+                            <h4>Task 5: Text Editing</h4>
+                            <h5>Activating an edit box, typing, moving a cursor, selecting and acting on text</h5>
+                        </div>
+                    </a>
+                </div>
             </div>
+            
         </div>
     </div>
     <script type="text/javascript" src="jquery-3.2.1.min.js"></script>

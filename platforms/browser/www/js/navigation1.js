@@ -48,3 +48,7 @@ var app = {
         console.log('Received Event: ' + id);
     }
 };
+
+$("#home").click(function() {
+    window.location.href = "navigationmenu.html";
+});

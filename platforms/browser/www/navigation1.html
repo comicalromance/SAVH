@@ -23,18 +23,30 @@
 
 <body>
     <div class="app">
-        <h1>ITEM 1</h1>
-        <p> Insert Description here </p>
         <div id="deviceready">
             <p class="event listening">Connecting to Device</p>
-            <div class="event received" id="main-block">
-                <div id="action-block" >
+            <div class="event received">
+                <div id="headbar">
+                    <div class="spacer"></div>
+                    <img src="img/home.png" id="home"/>Navigation Task 1: 
                 </div>
-                <div id="menu-buttons">
-                    <button> Back </button>
-                    <button> Next </button>
+                <div id="instructions">
+                    TalkBack lessons are arrnaged similarly. The top area has the lrsson, which you can explore and read at any time. It also has a Tutorial Home button in the top left corner. The middle has a practice area. The bottom has a progress indicator, and lesson navigation buttons. Activate Next now to continue.
+                </div>
+                <div id="actionblock">
+                </div>
+                <div id="menu">
+                    <a id="backpage"><div id="back">
+                        <div class="spacer2"></div>
+                        <img src="img/backarrow.png" id="backarrow"/>
+                        Back
+                    </div></a>
+                    <a id="nextpage"><div id="front"><div class="spacer2"></div>Next<img src="img/frontarrow.png" id="frontarrow"/></div></a>
+                    <div class="spacer2"></div>
+                    Page 1 of 5
                 </div>
             </div>
+            
         </div>
     </div>
     <script type="text/javascript" src="jquery-3.2.1.min.js"></script>
