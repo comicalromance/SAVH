@@ -50,5 +50,5 @@ var app = {
 };
 
 $("#home").click(function() {
-    window.location.href = "reviews.html";
+    history.back(-1);
 });

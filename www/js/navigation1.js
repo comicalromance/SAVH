@@ -50,5 +50,5 @@ var app = {
 };
 
 $("#home").click(function() {
-    window.location.href = "navigationmenu.html";
+    history.back(-1);
 });

@@ -49,10 +49,10 @@ var app = {
     }
 };
 
-$("#deviceready a").click(function() {
+$("#deviceready").find("a").click(function () {
     window.location.href = $(this)[0].id + "menu.html";
 });
 
 $("#home").click(function() {
-    window.location.href = "index.html";
+    history.back(-1);
 });

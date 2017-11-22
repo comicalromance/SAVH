@@ -50,6 +50,6 @@ var app = {
 };
 
 $("#home").click(function() {
-    window.location.href = "news.html";
+    history.back(-1);
 });
 
