@@ -1,0 +1,19 @@
+#action1 {
+    font-size:24px;
+    overflow-y:scroll;
+}
+
+#action1 div {
+    padding:2%;
+    border-top:1px solid;
+    text-align:left;
+}
+
+.spacer3 {
+    height:50%;
+    margin-bottom:-48px;
+}
+
+.spacer4 {
+    height:10%;
+}

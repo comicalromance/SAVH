@@ -49,10 +49,44 @@ var app = {
     }
 };
 
-$("#deviceready").find("a").click(function() {
-    window.location.href = $(this)[0].id + "article.html";
-});
 
 $("#home").click(function() {
     history.back(-1);
 });
+
+$("#backpage").click(function() {
+    var page = $(".instructions:visible")[0].id.substring(12,13);
+    var newpage = (parseInt(page) - 1);
+    if(page>1) {
+        $("#instructions" + page).hide();
+        $("#instructions" + newpage).show();
+        $("#action1").toggle();
+        $("#action2").toggle();
+        $("#pageno").text('Page ' + newpage + ' of 2');
+        if(page==3) {
+            $("#nextpage").toggle();
+            $("#nextlesson").toggle();
+        }
+    }
+})
+
+$("#nextpage").click(function() {
+    var page = $(".instructions:visible")[0].id.substring(12,13);
+    var newpage = (parseInt(page) + 1)
+    if(page<3) {
+        $("#instructions" + page).hide();
+        $("#instructions" + newpage).show();
+        $("#action1").toggle();
+        $("#action2").toggle();
+        $("#pageno").text('Page ' + newpage + ' of 2');
+        if(page==2) {
+            $("#pageno").text('');
+            $("#nextpage").toggle();
+            $("#nextlesson").toggle();
+        }
+    }
+})
+
+$("#nextlesson").click(function() {
+    window.location.href = "navigation4.html";
+})
