@@ -49,6 +49,50 @@ var app = {
     }
 };
 
+
 $("#home").click(function() {
     history.back(-1);
 });
+
+$("#backpage").click(function() {
+    var page = $(".instructions:visible")[0].id.substring(12,13);
+    var newpage = (parseInt(page) - 1);
+    if(page>1) {
+        $("#instructions" + page).hide();
+        $("#instructions" + newpage).show();
+        if(page==4 || page==3) {
+            $("#action1").toggle();
+            $("#action2").toggle();
+        }
+        if(page==5) {
+            $("#nextpage").toggle();
+            $("#nextlesson").toggle();
+        }
+        $("#pageno").text('Page ' + newpage + ' of 4');
+    }
+})
+
+$("#nextpage").click(function() {
+    var page = $(".instructions:visible")[0].id.substring(12,13);
+    var newpage = (parseInt(page) + 1);
+    if(page<5) {
+        $("#instructions" + page).hide();
+        $("#instructions" + newpage).show();
+        if(page==2 || page==3) {
+            $("#action1").toggle();
+            $("#action2").toggle();
+        }
+        $("#pageno").text('Page ' + newpage + ' of 4');
+        if(page==4) {
+            $("#pageno").text('');
+            $("#nextpage").toggle();
+            $("#nextlesson").toggle();
+        }
+    }
+})
+
+$("#nextlesson").click(function() {
+    window.location.href = "navigation2.html";
+})
+
+

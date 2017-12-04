@@ -49,6 +49,7 @@ var app = {
     }
 };
 
-$("#deviceready a").click(function() {
+$("#deviceready").find("a").click(function() {
     window.location.href = $(this)[0].id + ".html";
 });
+
