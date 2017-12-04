@@ -50,7 +50,7 @@ var app = {
 };
 
 $("#deviceready").find("a").click(function() {
-    window.location.href "navigation" + $(this)[0].id + ".html";
+    window.location.href = "navigation" + $(this)[0].id + ".html";
 });
 
 $("#home").click(function() {
