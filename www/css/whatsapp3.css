@@ -1,0 +1,28 @@
+#action2 {
+    overflow-y:auto;
+}
+
+#whatsappbar {
+    background-color: #075c52;
+    height:5%;
+    padding:2%;
+}
+
+#whatsappmain div {
+    padding:2%;
+    border-top:1px solid;
+    text-align:left;
+}
+
+h1 {
+    font-size:24px;
+}
+
+.spacer3 {
+    height:50%;
+    margin-bottom:-48px;
+}
+
+.spacer4 {
+    height:10%;
+}

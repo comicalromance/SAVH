@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <meta charset="utf-8" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="msapplication-tap-highlight" content="no" />
+    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width" />
+    <!-- This is a wide open CSP declaration. To lock this down for production, see below. -->
+    <!--<meta http-equiv="Content-Security-Policy" content="default-src * 'unsafe-inline'; style-src 'self' 'unsafe-inline'; media-src *" /> -->
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: 'unsafe-inline' https://ssl.gstatic.com; style-src 'self' 'unsafe-inline'; media-src *" /> 
+    <!-- Good default declaration:
+    * gap: is required only on iOS (when using UIWebView) and is needed for JS->native communication
+    * https://ssl.gstatic.com is required only on Android and is needed for TalkBack to function properly
+    * Disables use of eval() and inline scripts in order to mitigate risk of XSS vulnerabilities. To change this:
+        * Enable inline JS: add 'unsafe-inline' to default-src
+        * Enable eval(): add 'unsafe-eval' to default-src
+    * Create your own at http://cspisawesome.com
+    -->
+    <!-- <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: 'unsafe-inline' https://ssl.gstatic.com; style-src 'self' 'unsafe-inline'; media-src *" /> -->
+    <link rel="stylesheet" type="text/css" href="css/tutorialtemplate.css" />
+    <link rel="stylesheet" type="text/css" href="css/whatsapp1.css" />
+
+    <title>Whatsapp</title>
+</head>
+
+<body>
+    <div class="app">
+        <div id="deviceready">
+            <p class="event listening">Connecting to Device</p>
+            <div class="event received">
+                <div id="headbar">
+                    <div class="spacer"></div>
+                    <img src="img/home.png" id="home"/>Task 1: The Whatsapp Application
+                </div>
+                <div class="instructions" id="instructions1">
+                    Part 1: Finding Whatsapp
+                    <br/>
+                    Whatsapp is an instant messaging application that enables smartphone users to communicate for free, as long as they have internet connection. This application is available for download on the Google Play Store. Once downloaded, you can access the application by tapping on the Whatsapp icon, and then double tapping the screen.
+                </div>
+                <div class="instructions" id="instructions2" style="display:none">
+                    Part 2: The Whatsapp Interface
+                    <br/>
+                    Upon opening the application, the main page of Whatsapp will be displayed. The main page contains a list of all the messages received or sent, organized by conversations with individuals or groups. 
+                </div>
+                <div class="instructions" id="instructions3" style="display:none">
+                    Part 3: Navigating Whatsapp Messages
+                    <br/>
+                    You can either tap or swipe right/left to select a conversation - upon selecting a conversation, Talkback will read out the name of the contact or group, and the content of the last message. You can also scroll through the list of conversations by moving two fingers up or down the screen.
+                </div>
+                <div class="instructions" id="instructions4" style="display:none">
+                    Part 4: Whatsapp Buttons and Pages
+                    <br/>
+                    <span id="textbox">There are also other buttons and pages on the main screen that you can access. Select them below to see what they do!</span>
+                </div>
+                <div class="actionblock" id="action1">
+                    <div class="spacer3"></div>
+                    <img src="img/whatsappicon.png" id="whatsapp"/>
+                </div>
+                <div class="actionblock" id="action2" style="display:none">
+                    <div id="whatsappbar"> WhatsApp </div>
+                    <div id="whatsappmain">
+                        <div>
+                            <h1>Bob</h1>
+                            <h2>How's it going!</h2>
+                        </div>
+                        <div>
+                            <h1>Steve</h1>
+                            <h2>Call me when you're done!</h2>
+                        </div>
+                        <div>
+                            <h1>Michael</h1>
+                            <h2>I heard the price of celery went up again</h2>
+                        </div>
+                        <div>
+                            <h1>Best Friends Group</h1>
+                            <h2>Thomas: That's great! See you there</h2>
+                        </div>
+                        <div>
+                            <h1>Mom</h1>
+                            <h2>Hi Mom</h2>
+                        </div>
+                        <div>
+                            <h1>Sister</h1>
+                            <h2>Winter is cold!</h2>
+                        </div>
+                        <div>
+                            <h1>Brother</h1>
+                            <h2>Winter is not cold enough!</h2>
+                        </div>
+                    </div>
+                </div>
+                <div class="actionblock" id="action3" style="display:none">
+                    <div class="spacer4"></div>
+                    <table>
+                        <tr>
+                            <th id="0">Chats</th>
+                            <th id="1">Status</th>
+                            <th id="2">Calls</th>
+                            <th id="3"><img src="img/whatsappcamera.png" class="smallicon"/><br/>Camera</th>
+                            <th id="4"><img src="img/whatsappsearch.png" class="smallicon"/><br/>Search</th>
+                            <th id="5"><img src="img/whatsappdetails.png" class="smallicon"/><br/>More Options</th>
+                        </tr>
+                    </table>
+                </div>
+                <div id="menu">
+                    <a id="backpage"><div id="back">
+                        <div class="spacer2"></div>
+                        <img src="img/backarrow.png" id="backarrow"/>
+                        Back
+                    </div></a>
+                    <a id="nextpage"><div class="front"><div class="spacer2"></div>Next<img src="img/frontarrow.png" id="frontarrow"/></div></a>
+                    <a id="nextlesson" style="display:none"><div class="front"><div class="spacer2"></div>Next Lesson<img src="img/frontarrow.png" id="frontarrow"/></div></a>
+                    <div class="spacer2"></div>
+                    <span id="pageno">Page 1 of 4</span>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+    <script type="text/javascript" src="jquery-3.2.1.min.js"></script>
+    <script type="text/javascript" src="cordova.js"></script>
+    <script type="text/javascript" src="js/whatsapp1.js"></script>
+    <script type="text/javascript">
+        app.initialize();
+    </script>
+</body>
+
+</html>

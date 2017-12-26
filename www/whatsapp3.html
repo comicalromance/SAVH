@@ -18,8 +18,8 @@
     -->
     <!-- <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: 'unsafe-inline' https://ssl.gstatic.com; style-src 'self' 'unsafe-inline'; media-src *" /> -->
     <link rel="stylesheet" type="text/css" href="css/tutorialtemplate.css" />
-    <link rel="stylesheet" type="text/css" href="css/navigation4.css" />
-    <title>Navigation</title>
+    <link rel="stylesheet" type="text/css" href="css/whatsapp3.css" />
+    <title>Whatsapp</title>
 </head>
 
 <body>
@@ -29,30 +29,52 @@
             <div class="event received">
                 <div id="headbar">
                     <div class="spacer"></div>
-                    <img src="img/home.png" id="home"/>Task 4: Text Navigation 
+                    <img src="img/home.png" id="home"/>Task 3: Starting a New Conversation
                 </div>
                 <div class="instructions" id="instructions1">
-                    Part 1: Choosing navigation settings
+                    Part 1: Starting a New Conversation
                     <br/>
-                    TalkBack lets you control whether text is read to you a paragraph, a line, a word, or a character at a time. Reading by character can help with spelling. Set the text navigation rate to characters by tapping on the text below, tehn swiping up and down.
+                    To start a new conversation, tap on the green "New Chat Button" at the bottom right of the screen. Then, double tap the screen.
                 </div>
                 <div class="instructions" id="instructions2" style="display:none">
-                    Part 2: Navigating text
+                    Part 2: The Contacts Page
                     <br/>
-                    You are now reading by character. Select the sample text, then swipe right to read by character.
+                    Double tapping the screen will bring you to the contacts page, which displays a list of all your contacts. Select a contact from the list by swiping left/right or tapping, and then double tap the screen to confirm. 
                 </div>
-                <div class="instructions" id="instructions3" style="display:none">
-                    Part 3: Practice
+                <div class="instructions" id="instructions3" style="display:none"> 
+                    Part 3: Writing the Message
                     <br/>
-                    Change the text navigation rate by swiping up and down. Read the next character in the sample text by swiping right.
+                    Once you have selected a contact, you will be immediately brought to the conversation page, with the message input box automatically focused like before. Similar to before, double tap the screen to display the keyboard and type the message you desire. Once done, swipe to, or tap the "Send" Button, and double tap the screen.
                 </div>
                 <div class="actionblock" id="action1">
-                    <br/>
-                    <br/>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse ac eros cursus, feugiat urna vel, commodo turpis. Proin placerat, dui et vulputate porttitor, ante orci ultricies felis, feugiat rutrum ex felis eget sem. Morbi eget efficitur enim. Vivamus libero nulla, sollicitudin vel ex eget, imperdiet placerat velit. Nullam molestie congue ultrices. Vivamus quam velit, iaculis vel ex eget, consectetur convallis lorem. Nulla mi lectus, convallis non lacus rutrum, lobortis tincidunt nisl.
-
+                    <div class="spacer3"></div>
+                    <img src="img/whatsappnew.png" id="newmessage"/>
                 </div>
-
+                <div class="actionblock" id="action2" style="display:none">
+                    <div id="whatsappbar"> Select Contact </div>
+                    <div id="whatsappmain">
+                        <div>
+                            <h1>Bob</h1>
+                        </div>
+                        <div>
+                            <h1>Steve</h1>
+                        </div>
+                        <div>
+                            <h1>Michael</h1>
+                        </div>
+                        <div>
+                            <h1>Best Friends Group</h1>
+                        </div>
+                        <div>
+                            <h1>Mom</h1>
+                        </div>
+                        <div>
+                            <h1>Sister</h1>
+                        </div>
+                    </div>
+                </div>
+                <div class="actionblock" id="action3" style="display:none">
+                </div>
                 <div id="menu">
                     <a id="backpage"><div id="back">
                         <div class="spacer2"></div>
@@ -60,9 +82,9 @@
                         Back
                     </div></a>
                     <a id="nextpage"><div class="front"><div class="spacer2"></div>Next<img src="img/frontarrow.png" id="frontarrow"/></div></a>
-                    <a id="nextlesson" style="display:none"><div class="front"><div class="spacer2"></div>Next Lesson<img src="img/frontarrow.png" id="frontarrow"/></div></a>
+                    <a id="nextlesson" style="display:none"><div class="front"><div class="spacer2"></div>Tutorial Home<img src="img/frontarrow.png" id="frontarrow"/></div></a>
                     <div class="spacer2"></div>
-                    <span id="pageno">Page 1 of 2</span>
+                    <span id="pageno">Page 1 of 3</span>
                 </div>
             </div>
             
@@ -70,7 +92,7 @@
     </div>
     <script type="text/javascript" src="jquery-3.2.1.min.js"></script>
     <script type="text/javascript" src="cordova.js"></script>
-    <script type="text/javascript" src="js/navigation4.js"></script>
+    <script type="text/javascript" src="js/whatsapp3.js"></script>
     <script type="text/javascript">
         app.initialize();
     </script>

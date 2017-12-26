@@ -1,0 +1,56 @@
+#whatsappbar {
+    color:#ffffff;
+    background-color: #075c52;
+    height:5%;
+    padding:2%;
+}
+
+#action2 {
+    font-size:24px;
+    overflow-y:auto;
+}
+
+#whatsappmain div {
+    padding:2%;
+    border-top:1px solid;
+    text-align:left;
+}
+
+h1 {
+    margin:0;
+    font-size:24px;
+}
+
+h2 {
+    margin:0;
+    font-size:16px;
+    color:grey;
+}
+
+table {
+    color:#ffffff;
+    background-color: #075c52;
+    font-size:24px;
+    border-collapse: collapse;
+    margin-left:auto;
+    margin-right:auto;
+}
+
+tr, th {
+    border:1px solid;
+}
+
+th {
+    width:15%;
+    padding-top:7.5%;
+    padding-bottom:7.5%;
+}
+
+.spacer3 {
+    height:50%;
+    margin-bottom:-96px;
+}
+
+.spacer4 {
+    height:10%;
+}

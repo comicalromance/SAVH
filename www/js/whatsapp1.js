@@ -49,6 +49,14 @@ var app = {
     }
 };
 
+var menutext = [
+    "Chats is the main page of Whatsapp, and displays the list of all the conversations you have with other contacts and groups.",
+    "Status is a social media function that enables you to set your status (eg. Facebook status) for the day.",
+    "Calls displays the list of WhatsApp calls that you have sent and received.",
+    "Camera displays a camera interface for you to take photos while in the Whatsapp application.",
+    "Search allows you to search for names of contacts or groups, as well as content in any sent or received Whatsapp message.",
+    "More options displays a list of more options such as settings, or creating new groups."
+];
 
 $("#home").click(function() {
     history.back(-1);
@@ -60,15 +68,17 @@ $("#backpage").click(function() {
     if(page>1) {
         $("#instructions" + page).hide();
         $("#instructions" + newpage).show();
-        if(page==4 || page==3) {
+        if(page==2) {
             $("#action1").toggle();
             $("#action2").toggle();
         }
-        if(page==4) {
+        else if(page==4) {
+            $("#action2").toggle();
+            $("#action3").toggle();
             $("#nextpage").toggle();
             $("#nextlesson").toggle();
         }
-        $("#pageno").text('Page ' + newpage + ' of 3');
+        $("#pageno").text('Page ' + newpage + ' of 4');
     }
 })
 
@@ -78,19 +88,28 @@ $("#nextpage").click(function() {
     if(page<4) {
         $("#instructions" + page).hide();
         $("#instructions" + newpage).show();
-        if(page==2 || page==3) {
+        if(page==1) {
             $("#action1").toggle();
             $("#action2").toggle();
         }
-        $("#pageno").text('Page ' + newpage + ' of 3');
-    }
-    if(page==3) {
-        $("#pageno").text('');
-        $("#nextpage").toggle();
-        $("#nextlesson").toggle();
+        if(page==3) {
+            $("#action2").toggle();
+            $("#action3").toggle();
+            $("#nextpage").toggle();
+            $("#nextlesson").toggle();
+        }
+        $("#pageno").text('Page ' + newpage + ' of 4');
     }
 })
 
 $("#nextlesson").click(function() {
-    history.back(-1);
+    var stateObj = { foo: "bar" };
+    history.replaceState(stateObj, "page", "whatsapp2.html");
+    window.location.href = "whatsapp2.html";
 })
+
+$("table").find("th").click(function() {
+    $("#textbox").text(menutext[parseInt($(this)[0].id)]);
+});
+
+

@@ -88,5 +88,7 @@ $("#nextpage").click(function() {
 })
 
 $("#nextlesson").click(function() {
+    var stateObj = { foo: "bar" };
+    history.replaceState(stateObj, "page", "navigation4.html");
     window.location.href = "navigation4.html";
 })

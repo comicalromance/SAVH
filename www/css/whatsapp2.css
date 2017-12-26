@@ -1,0 +1,59 @@
+#action2 {
+    overflow-y:auto;
+}
+
+#whatsappbar {
+    background-color: #075c52;
+    height:5%;
+    padding:2%;
+}
+
+#whatsappmain {
+    height:80%;
+    font-size:16px;
+}
+
+.wrapper {
+    padding:0;
+    border:0;
+    width:100%;
+    padding-top:1%;
+    padding-bottom:4%;
+}
+
+.receiving {
+    padding:0.5%;
+    border:1px solid;
+    border-color:grey;
+    background-color: #ffffff;
+    float:left;
+    margin-left:1%;
+}
+
+.sending {
+    padding:0.5%;
+    border:1px solid;
+    border-color:grey;
+    background-color: #e2ffc9;
+    float:right;
+    margin-right:1%;
+}
+
+#messagebox {
+    font-size:24px;
+    width:80%;
+}
+
+#sendbutton {
+    margin-bottom:-6px;
+    margin-left:5px;
+    width:36px;
+}
+
+.spacer3 {
+    height:20%;
+}
+
+.spacer4 {
+    height:10%;
+}

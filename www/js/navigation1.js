@@ -92,6 +92,8 @@ $("#nextpage").click(function() {
 })
 
 $("#nextlesson").click(function() {
+    var stateObj = { foo: "bar" };
+    history.replaceState(stateObj, "page", "navigation2.html");
     window.location.href = "navigation2.html";
 })
 

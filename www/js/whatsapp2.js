@@ -60,7 +60,7 @@ $("#backpage").click(function() {
     if(page>1) {
         $("#instructions" + page).hide();
         $("#instructions" + newpage).show();
-        if(page==4 || page==3) {
+        if(page==2) {
             $("#action1").toggle();
             $("#action2").toggle();
         }
@@ -68,7 +68,7 @@ $("#backpage").click(function() {
             $("#nextpage").toggle();
             $("#nextlesson").toggle();
         }
-        $("#pageno").text('Page ' + newpage + ' of 3');
+        $("#pageno").text('Page ' + newpage + ' of 4');
     }
 })
 
@@ -78,19 +78,20 @@ $("#nextpage").click(function() {
     if(page<4) {
         $("#instructions" + page).hide();
         $("#instructions" + newpage).show();
-        if(page==2 || page==3) {
+        if(page==1) {
             $("#action1").toggle();
             $("#action2").toggle();
         }
-        $("#pageno").text('Page ' + newpage + ' of 3');
-    }
-    if(page==3) {
-        $("#pageno").text('');
-        $("#nextpage").toggle();
-        $("#nextlesson").toggle();
+        if(page==3) {
+            $("#nextpage").toggle();
+            $("#nextlesson").toggle();
+        }
+        $("#pageno").text('Page ' + newpage + ' of 4');
     }
 })
 
 $("#nextlesson").click(function() {
-    history.back(-1);
+    var stateObj = { foo: "bar" };
+    history.replaceState(stateObj, "page", "whatsapp3.html");
+    window.location.href = "whatsapp3.html";
 })
