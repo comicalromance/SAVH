@@ -50,6 +50,8 @@ var app = {
 };
 
 $("#deviceready").find("a").click(function() {
-    window.location.href = $(this)[0].id + ".html";
+    if($(this)[0].id == "tutorial") {
+        window.location.href = $(this)[0].id + ".html";
+    }
 });
 
