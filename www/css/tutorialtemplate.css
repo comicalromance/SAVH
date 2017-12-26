@@ -67,7 +67,7 @@ body {
     background-color:#35464d;
     text-align:justify;
     color:#b7c3c7;
-    font-size:20px;
+    font-size:18px;
     overflow-y: auto;
 }
 
@@ -77,6 +77,7 @@ body {
 
 #menu {
     height:7%;
+    font-size:18px;
     text-align:center;
     background-color:#dedede;
 }
